@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0">
+
+    <!-- placeholder map background -->
+    <ImageView
+        android:id="@+id/mapBg"
+        android:src="@drawable/mock_map_bg"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- container for fake markers -->
+    <FrameLayout
+        android:id="@+id/fakeMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- popup view -->
+    <LinearLayout
+        android:id="@+id/markerPopup"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:background="@drawable/rounded_white"
+        android:visibility="gone"
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/popupTitle"
+            android:text="Info"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/popupImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</FrameLayout>

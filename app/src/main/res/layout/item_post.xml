@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <!-- User row -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_profile"
+            android:background="@drawable/rounded_gold_bg"
+            android:padding="8dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvUserName"
+                android:text="User Name"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTimestamp"
+                android:text="2h • Mumbai"
+                android:textSize="13sp"
+                android:textColor="#777"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Post Image -->
+    <ImageView
+        android:id="@+id/imgPost"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <!-- Description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDescription"
+        android:layout_marginTop="4dp"
+        android:textSize="15sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="#555"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvReadMore"
+        android:text="Read more"
+        android:textColor="#0A7AFF"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <!-- Like / Comment Row -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLikes"
+            android:text="❤️ 12"
+            android:textSize="16sp"
+            android:textColor="#FF0033"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvComments"
+            android:text="💬 4"
+            android:textSize="16sp"
+            android:textColor="#555"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

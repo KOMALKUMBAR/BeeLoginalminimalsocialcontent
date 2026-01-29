@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#0D0F1A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Logo Circle -->
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_gold_bg"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/linkedin_372399" />
+        </LinearLayout>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join the Network"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage your station with precision."
+            android:textColor="#BBBBBB"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bg"
+            android:padding="14dp"
+            android:hint="Enter your full name"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#777777"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bg"
+            android:padding="14dp"
+            android:hint="name@company.com"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#777777"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_bg"
+            android:padding="14dp"
+            android:hint="Create a strong password"
+            android:textColor="#FFFFFF"
+            android:inputType="textPassword"
+            android:textColorHint="#777777"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Sign Up"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn_gold_bg"/>
+
+        <!-- Bottom Text -->
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Log In"
+            android:textColor="#FFD700"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"/>
+    </LinearLayout>
+
+</ScrollView>
